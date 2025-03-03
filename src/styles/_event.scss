@@ -3,16 +3,16 @@
 .event {
   padding: 80 0;
 
-  &__frontend {
+  &__comida {
     background-image: linear-gradient(variables.$blue1, variables.$blue2);
   }
-  &__ux-ui {
+  &__brinquedo {
     background-image: linear-gradient(variables.$blue2, variables.$pink);
   }
-  &__data-science {
+  &__drinks {
     background-image: linear-gradient(variables.$pink, variables.$yellow);
   }
-  &__backend {
+  &__brindes {
     background-image: linear-gradient(variables.$yellow, variables.$blue1);
   }
 
@@ -29,6 +29,7 @@
 
   &__image {
     max-width: 22.5rem;
+    border-radius: 0.5rem;
   }
 
   &__details {

@@ -1,20 +1,26 @@
 @use "../variables";
+@use "sass:color";
 
 .button {
   padding: 12px;
   font-weight: bold;
   font-size: 18px;
-  text-align: center;
   white-space: nowrap;
+  border-radius: 0.5rem;
+  text-align: center;
 
+  &:hover {
+    background-color: color.scale($color: variables.$bgButton, $lightness: 15%);
+  }
   &--primary {
     color: variables.$textColor;
     background-color: variables.$bgButton;
   }
 
   @media (max-width: 640px) {
-    display: block;
+    display: flex;
     width: 100%;
+    justify-content: center;
   }
   @media (max-width: 1024) {
     display: flex;
